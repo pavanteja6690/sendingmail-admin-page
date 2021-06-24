@@ -3,8 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  overflow: hidden;
+.submit {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.footer {
+  height: 80px;
+  background: lightskyblue;
 }
 .navbar {
   display: flex;
@@ -44,6 +51,7 @@ body {
   position: absolute;
   left: -400px;
   padding-top: 30px;
+  z-index: 20;
 }
 .sidebarelement {
   margin-top: 10px;
@@ -55,63 +63,7 @@ body {
   text-align: center;
   margin-top: 30px;
 }
-.selectsite,
-.selectsortby {
-  width: 300px !important;
-  font-size: large !important;
-  padding: 10px;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: 1px solid black !important;
-}
-.selectsite:focus,
-.selectsortby:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.firstline,
-.secondline {
-  display: flex;
-  justify-content: space-around;
-  margin: 80px 0px;
-}
-.problemname,
-.searchsitetags {
-  width: 300px !important;
-  padding: 5px;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid black;
-}
-.checkboxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -30px;
-}
-.searchbutton {
-  margin-top: 20px;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background: rgb(0, 148, 153);
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  transition: 0.5s;
-}
-.searchbutton:hover {
-  transform: scale(1.1);
-}
-.selectsite {
-  background: white !important;
-  color: black !important;
-  text-align: left !important;
-}
+
 .dropdown-menu {
   width: 300px !important;
 }
@@ -126,4 +78,8 @@ body {
   z-index: 100;
   font-size: medium !important;
   display: none;
+}
+.input-field {
+  margin: auto;
+  margin-top: 50px !important;
 }
