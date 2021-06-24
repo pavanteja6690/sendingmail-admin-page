@@ -32,7 +32,7 @@ $(document).ready(() => {
     var data = { name, mail: email, subject, textmessage };
 
     $.ajax({
-      url: "http://localhost:5000/sendmessage",
+      url: "https://ancient-dusk-88387.herokuapp.com/sendmessage",
       type: "post",
       data: JSON.stringify(data),
       headers: {
