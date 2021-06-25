@@ -3,7 +3,7 @@ var toggle = 1;
 $(document).ready(() => {
   $("body>*:not(.sidebar):not(.navbar)").click(() => {
     if (toggle == 0) {
-      $(".sidebar").animate({ left: "-320px" });
+      $(".sidebar").animate({ left: "-380px" });
       $("body").css("overflow", "scroll");
       $("body > *:not(.sidebar):not(.navbar)").css("opacity", "1");
       toggle = 1;
@@ -12,7 +12,7 @@ $(document).ready(() => {
   $(".hamicon").click(() => {
     // $(".sidebar").toggle("slow");
     if (toggle == 0) {
-      $(".sidebar").animate({ left: "-320px" });
+      $(".sidebar").animate({ left: "-380px" });
       $("body").css("overflow", "scroll");
       $("body > *:not(.sidebar):not(.navbar)").css("opacity", "1");
       toggle = 1;
